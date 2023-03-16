@@ -1,3 +1,8 @@
+import 'package:brain_toumr_detecation/ui/screens/HomePage.dart';
+import 'package:brain_toumr_detecation/ui/screens/ScanSuccess.dart';
+import 'package:brain_toumr_detecation/ui/screens/SplashScreen.dart';
+import 'package:brain_toumr_detecation/ui/screens/uploading.dart';
+import 'package:brain_toumr_detecation/ui/screens/Scanfail.dart';
 import 'package:flutter/material.dart';
 
 void main(){
@@ -9,8 +14,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: ,
+    return   MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: SplashScreen(),
     );
   }
 }
