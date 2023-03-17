@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:brain_toumr_detecation/ui/screens/ScanSuccess.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class Uploading extends StatefulWidget {
   const Uploading({Key? key}) : super(key: key);
@@ -29,22 +30,24 @@ class _UploadingState extends State<Uploading> {
       body: SafeArea(
         child: Stack(
           children: [
-            SizedBox(width: double.infinity,
+            SizedBox(
+              height: double.infinity,
+              width: double.infinity,
               child: Image.asset('assets/images/300px-Hydrocephalus.png',
                   fit: BoxFit.fill),
             ),
             Positioned(
-              top: 250,
-              left: 70,
+              top: 250.h,
+              left: 70.w,
               child: Image.asset('assets/images/Layer 2.png'),
             ),
              Positioned(
-               bottom: 50,
-               left: 100,
-               right: 100,
+               bottom: 50.h,
+               left: 100.w,
+               right: 100.w,
                child: Container(
                  alignment: Alignment.center,
-                   child: const Text("X-ray are being examined",style: TextStyle(color: Colors.white),)),
+                   child:  Text("X-ray are being examined",style: TextStyle(color: Colors.white,fontSize: 16.sp),)),
              )
           ],
         )

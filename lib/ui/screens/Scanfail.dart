@@ -1,5 +1,6 @@
 import 'package:brain_toumr_detecation/ui/screens/HomePage.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class ScanFail extends StatelessWidget {
   const ScanFail({Key? key}) : super(key: key);
@@ -16,18 +17,18 @@ class ScanFail extends StatelessWidget {
                 alignment: Alignment.center,
                 child: Image.asset(
                     'assets/images/man-with-headache-svgrepo-com.png')),
-            const SizedBox(height: 40,),
-            const Text(
+             SizedBox(height: 40.h,),
+              Text(
               'Unfortunately You Have a Brain Cancer',
               style: TextStyle(
                   color: Colors.white,
-                  fontSize: 25,
+                  fontSize: 26.sp,
                   fontWeight: FontWeight.bold),
             ),
-            const SizedBox(height: 200,),
+             SizedBox(height: 200.h,),
             SizedBox(
-              width: 200,
-              height: 50,
+              width: 200.h,
+              height: 50.w,
               child: ElevatedButton(
                 style: const ButtonStyle(
                     shape: MaterialStatePropertyAll(RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(35.0)))),
@@ -37,9 +38,9 @@ class ScanFail extends StatelessWidget {
                   Navigator.push(context,MaterialPageRoute(builder: (context) => const HomePage(),));
                 }, child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: const [
-                  Icon(Icons.upload),
-                  Text('Try Another?'),
+                children:  [
+                  const Icon(Icons.upload),
+                  Text('Try Another?',style: TextStyle(fontSize: 15.sp),),
                 ],
               ),),
             )

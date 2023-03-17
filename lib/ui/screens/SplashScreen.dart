@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'package:brain_toumr_detecation/ui/screens/HomePage.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class SplashScreen extends StatefulWidget {
   @override
@@ -28,21 +29,21 @@ class _MyHomePageState extends State<SplashScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           children:  [
             Container(
-              margin: const EdgeInsets.only(left: 20),
+              margin:  EdgeInsets.only(left: 20.w),
               child: Row(
-                children: const [
+                children:  [
                   Text("BRAIN TUMOR",style: TextStyle(
-                      color: Colors.white,fontSize: 40
+                      color: Colors.white,fontSize: 36.sp
                   ),),
                 ],
               ),
             ),
             Container(
-              margin: const EdgeInsets.only(left: 20),
+              margin:  EdgeInsets.only(left: 20.w),
               child: Row(
-                children: const [
+                children:  [
                   Text("DETECATION",style: TextStyle(
-                      color: Color(0xff307FEA),fontSize: 40
+                      color: const Color(0xff307FEA),fontSize: 36.sp
                   ),),
                 ],
               ),
